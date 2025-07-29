@@ -129,7 +129,6 @@ detection-report.md
 diff-*.md
 cross-contract.md
 *.html
-*.md
 test-all-outputs.sh
 cleanup-comments.sh
 
