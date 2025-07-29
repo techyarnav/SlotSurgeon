@@ -1,0 +1,65 @@
+{
+  "name": "slot-surgeon",
+  "version": "0.1.0",
+  "description": "CLI tooling for Ethereum storage slot mapping, collision detection, and visualization",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "slot-surgeon": "./bin/slot-surgeon"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "storage",
+    "slots",
+    "cli",
+    "blockchain",
+    "smart-contracts"
+  ],
+  "author": "Arnav Gupta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techyarnav/SlotSurgeon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techyarnav/SlotSurgeon/issues"
+  },
+  "homepage": "https://github.com/techyarnav/SlotSurgeon#readme",
+  "dependencies": {
+    "@solidity-parser/parser": "^0.16.1",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

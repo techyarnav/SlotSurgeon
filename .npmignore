@@ -1,0 +1,117 @@
+# Source files
+src/
+tsconfig.json
+tsconfig.*.json
+
+# Test
+test-reports/
+coverage/
+
+# Development scripts and configs
+*.sh
+jest.config.js
+jest.config.ts
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# Development dependencies
+.github/
+.vscode/
+.idea/
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD files
+.travis.yml
+.github/
+circle.yml
+appveyor.yml
+
+# Documentation (keep README.md but ignore others)
+docs/
+CONTRIBUTING.md
+CHANGELOG.md
+TODO.md
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Editor files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Development reports and outputs
+test-reports/
+assembly-report.html
+assembly-detailed.html
+detection-report.md
+diff-*.md
+cross-contract.md
+
+# Local development directories
+slot-surgeon-demo/
+demo/
+examples/
+
+# Build artifacts we don't want to publish
+.nyc_output
+coverage
+
+# Package files
+*.tgz
+
+# Environment files
+.env*
+
+# Cache directories
+.cache/
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional files
+.npmrc
+
+# Development utilities
+test-all-outputs.sh
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Generated test outputs
+simple-storage.html
+complex-storage.html
+assembly-*.html
+detection-*.md
+diff-*.md
+cross-contract-*.md
+*.html
+*.md
+
+# Keep only essential files for package:
+# - package.json ✓
+# - README.md ✓  
+# - LICENSE ✓
+# - dist/ ✓
+# - bin/ ✓
